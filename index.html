@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googlefonts.cn/css?family=Poppins" rel="stylesheet">
+    <title>Dynamic Background Page</title>
+</head>
+<body>
+<section class="main-structure">
+    <header>
+        <a href="#">
+            <div class="logo">Travel</div>
+        </a>
+        <div class="menu-logo">
+
+        </div>
+    </header>
+    <div class="content">
+        <!--        通过js修改src会导致视频播放时跳动-->
+        <video src="assets/video/Aurora.mp4" autoplay muted loop></video>
+        <video src="assets/video/Beach.mp4" autoplay muted loop></video>
+        <video src="assets/video/SeasideCity.mp4" autoplay muted loop></video>
+        <video src="assets/video/SeaWave.mp4" autoplay muted loop></video>
+        <div class="video-overlay"></div>
+        <section class="text-description">
+            <h1></h1>
+            <h2></h2>
+            <p></p>
+            <a href="#">Explore</a>
+        </section>
+    </div>
+    <div class="slider-navigation">
+        <div class="nav-btn"></div>
+        <div class="nav-btn"></div>
+        <div class="nav-btn"></div>
+        <div class="nav-btn"></div>
+    </div>
+    <footer>
+        <a href="#">
+            <img src="assets/icons/facebook-fill.svg" alt="facebook">
+        </a>
+        <a href="#">
+            <img src="assets/icons/instagram-fill.svg" alt="instagram">
+        </a>
+        <a href="#">
+            <img src="assets/icons/twitter-fill.svg" alt="twitter">
+        </a>
+    </footer>
+</section>
+<section class="aside-menu">
+    <a href="#">
+        <span>Aurora</span>
+    </a>
+    <a href="#">
+        <span>Beach</span>
+    </a>
+    <a href="#">
+        <span>City</span>
+    </a>
+    <a href="#">
+        <span>SeaWave</span>
+    </a>
+</section>
+
+<script src="data/content.js"></script>
+<script src="script.js"></script>
+</body>
+</html>
